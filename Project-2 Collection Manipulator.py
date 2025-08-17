@@ -1,5 +1,5 @@
-students_list = []     # list to store student dictionaries
-subjects_set = set()   # set to store unique subjects
+students_list = []    
+subjects_set = set()  
 
 while True:
     print("\n1. Add Student")
@@ -72,3 +72,4 @@ while True:
 
     else:
         print("Invalid choice.")
+
