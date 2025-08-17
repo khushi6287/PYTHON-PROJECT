@@ -19,7 +19,7 @@ while True:
         age = input("Age: ")
         grade = input("Grade: ")
         dob = input("Date of Birth: ")
-        sub = input("Subjects (comma separated): ").split(",")
+        sub = input("Subjects (for-eg: Maths, english, ...): ").split(",")
 
         subjects.update(sub)
 
@@ -46,7 +46,7 @@ while True:
             if s["id"] == sid:
                 s["age"] = input("New Age: ")
                 s["grade"] = input("New Grade: ")
-                s["subjects"] = input("New Subjects (comma separated): ").split(",")
+                s["subjects"] = input("New Subjects (for-eg: Maths, english, ...): ").split(",")
                 subjects.update(s["subjects"])
                 print("Student updated!!!")
                 break
@@ -75,3 +75,4 @@ while True:
 
     else:
         print("Invalid choice, try again.")
+
