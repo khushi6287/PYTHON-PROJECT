@@ -6,16 +6,16 @@ while True:
     print("2.Analyze a Range of Numbers")
     print("3.Exit")
 
-    choice = input("Enter your choice: ")
+    choice = input("\nEnter your choice: ")
 
     if choice == "1":
-        rows = int(input("Enter the number of row for the pattern:  "))
-        print("Pattern:")
+        rows = int(input("\nEnter the number of row for the pattern:  "))
+        print("\nPattern:")
         for i in range(1, rows + 1):
             print("*" * i)
 
     elif choice == "2":
-        start = int(input("Enter the start of the range: "))
+        start = int(input("\nEnter the start of the range: "))
         end = int(input("Enter the end of the range: "))
 
         total = 0
@@ -27,7 +27,7 @@ while True:
             
             total += num
 
-        print(f"Sum of all number from {start} to {end} is: {total}")
+        print(f"\nSum of all number from {start} to {end} is: {total}")
 
     elif choice == "3":
         print("Goodbye!")
@@ -35,4 +35,5 @@ while True:
 
     else:
         print("Invalid choice. Please enter 1, 2, or 3.")
+
 
