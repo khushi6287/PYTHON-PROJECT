@@ -1,8 +1,8 @@
 students = []   
-subjects = set()  
+subjects = set()   
+print("\nWelcome to the Student Data Organizer !!!")
 
 while True:
-    print("\nWelcome to the Student Data Organizer !!!")
     print("\n1. Add Student")
     print("2. Show All Students")
     print("3. Update Student")
@@ -77,4 +77,5 @@ while True:
 
     else:
         print("Invalid choice, try again.")
+
 
