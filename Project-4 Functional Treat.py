@@ -1,9 +1,9 @@
 def fact(n):
     if n == 1 or n == 0:
-        return 1
-        
+        return 1 
     else:
         return n * fact(n - 1)
+        
 def dataset_stat(ds):
     Minimum = min(ds)
     Maximum = max(ds)
@@ -11,7 +11,6 @@ def dataset_stat(ds):
     Average = sum(ds)/len(ds)
 
     return Minimum, Maximum, Total, Average
-
 
 print("\n*------Welcome to the Data Analyzer and Transformer Program.------*")
 data = []
