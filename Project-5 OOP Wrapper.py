@@ -158,7 +158,6 @@ while True:
     elif choice == 5:
         compare_salaries()
     elif choice == 6:
-        print("Exiting the system. All resources have been freed.")
         print("Goodbye!")
         break
     else:
