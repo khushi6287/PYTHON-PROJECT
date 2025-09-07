@@ -15,4 +15,3 @@ print(f"Age: {age} (Type: {type(age)}) (id: {id(age)})")
 print(f"Height: {height} (Type: {type(height)}) (id: {id(height)})")
 print(f"Favourite Number: {fav_n} (Type: {type(fav_n)}) (id: {id(fav_n)})")
 print(f"Your Birth Year is: {birth_year}")
-
