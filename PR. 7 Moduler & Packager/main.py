@@ -1,10 +1,8 @@
-
 import datetime_module
 import math_module
 import random_module
 import uuid_module
 import file_operations
-import sys
 
 def display_menu():
     print("=" * 30)
@@ -21,16 +19,13 @@ def display_menu():
     print("=" * 30)
 
 def explore_module_attributes():
-    print("\nExplore Module Attributes:")
-    module_name = input("Enter module name to explore: ")
-    
+    module_name = input("\nEnter module name to explore: ")
     try:
         module = __import__(module_name)
-        attributes = dir(module)
         print(f"\nAvailable Attributes in {module_name} module:")
-        print(attributes)
+        print(dir(module))
     except ImportError:
-        print(f"Module '{module_name}' not found or cannot be imported.")
+        print(f"Module '{module_name}' not found.")
     except Exception as e:
         print(f"Error exploring module: {e}")
 
@@ -39,7 +34,7 @@ def main():
         try:
             display_menu()
             choice = input("Enter your choice: ")
-            
+
             if choice == "1":
                 datetime_module.datetime_operations()
             elif choice == "2":
@@ -56,13 +51,12 @@ def main():
                 print("=" * 30)
                 print("Thank you for using the Multi-Utility Toolkit!")
                 print("=" * 30)
-                sys.exit()
+                exit()
             else:
                 print("Invalid choice! Please enter a number between 1-7.")
-                
+
         except KeyboardInterrupt:
-            print("\n\nProgram interrupted by user.")
-            sys.exit()
+            exit("\n\nProgram interrupted by user.")
         except Exception as e:
             print(f"An error occurred: {e}")
 
